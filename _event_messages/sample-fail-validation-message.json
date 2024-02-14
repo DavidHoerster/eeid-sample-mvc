@@ -1,0 +1,14 @@
+{
+    "data": {
+        "@odata.type": "microsoft.graph.onAttributeCollectionSubmitResponseData",
+        "actions": [
+            {
+                "@odata.type": "microsoft.graph.attributeCollectionSubmit.ShowValidationError",
+                "message": "Please fix below errors to proceed",
+                "attributeErrors": {
+                    "extension_8f501e8ef99546fe900eca1aa5a0c08f_isTouAccepted": "You must accept terms of use"
+                }
+            }
+        ]
+    }
+}

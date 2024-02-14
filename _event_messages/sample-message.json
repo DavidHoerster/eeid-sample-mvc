@@ -1,0 +1,62 @@
+{
+    "type": "microsoft.graph.authenticationEvent.attributeCollectionSubmit",
+    "source": "/tenants/25fd4421-0fff-4ed6-ad2f-c2ca00ed7207/applications/00000003-0000-0000-c000-000000000000",
+    "data": {
+        "@odata.type": "microsoft.graph.onAttributeCollectionSubmitCalloutData",
+        "userSignUpInfo": {
+            "attributes": {
+                "displayName": {
+                    "value": "Tou Checker",
+                    "@odata.type": "microsoft.graph.stringDirectoryAttributeValue",
+                    "attributeType": "builtIn"
+                },
+                "givenName": {
+                    "value": "Tou",
+                    "@odata.type": "microsoft.graph.stringDirectoryAttributeValue",
+                    "attributeType": "builtIn"
+                },
+                "surname": {
+                    "value": "Checker",
+                    "@odata.type": "microsoft.graph.stringDirectoryAttributeValue",
+                    "attributeType": "builtIn"
+                },
+                "extension_8f501e8ef99546fe900eca1aa5a0c08f_isTouAccepted": {
+                    "value": true,
+                    "@odata.type": "microsoft.graph.booleanDirectoryAttributeValue",
+                    "attributeType": "directorySchemaExtension"
+                }
+            },
+            "identities": [
+                {
+                    "signInType": "emailAddress",
+                    "issuer": "kubedaveciam4.onmicrosoft.com",
+                    "issuerAssignedId": "tou11@mailinator.com"
+                }
+            ]
+        },
+        "tenantId": "25fd4421-0fff-4ed6-ad2f-c2ca00ed7207",
+        "authenticationEventListenerId": "d8c8142a-1325-46db-b901-c3bb1ce9c1dc",
+        "customAuthenticationExtensionId": "dfecd9c8-f33c-4ec0-a71f-706c2d822b1f",
+        "authenticationContext": {
+            "correlationId": "80909967-d484-4d04-8636-7cbf3a67fe60",
+            "client": {
+                "ip": "2001:4898:a800:1012:95d9:6ed:64f8:7630",
+                "locale": "en-us",
+                "market": "en-us"
+            },
+            "protocol": "OAUTH2.0",
+            "clientServicePrincipal": {
+                "id": "0f0b56f7-886b-4c03-884a-de61adb0b710",
+                "appId": "3fa73835-4fad-4273-9dec-ec8927114437",
+                "appDisplayName": "ciam-tou",
+                "displayName": "ciam-tou"
+            },
+            "resourceServicePrincipal": {
+                "id": "7d358cb6-e039-465e-a260-95d28c240731",
+                "appId": "00000003-0000-0000-c000-000000000000",
+                "appDisplayName": "Microsoft Graph",
+                "displayName": "Microsoft Graph"
+            }
+        }
+    }
+}

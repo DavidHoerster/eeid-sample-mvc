@@ -1,0 +1,10 @@
+{
+    "data": {
+        "@odata.type": "microsoft.graph.onAttributeCollectionSubmitResponseData",
+        "actions": [
+            {
+                "@odata.type": "microsoft.graph.attributeCollectionSubmit.ContinueWithDefaultBehavior"
+            }
+        ]
+    }
+}
