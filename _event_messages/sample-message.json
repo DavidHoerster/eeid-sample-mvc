@@ -20,7 +20,7 @@
                     "@odata.type": "microsoft.graph.stringDirectoryAttributeValue",
                     "attributeType": "builtIn"
                 },
-                "extension_8f501e8ef99546fe900eca1aa5a0c08f_isTouAccepted": {
+                "extension_<externsion-app-id>_isTouAccepted": {
                     "value": true,
                     "@odata.type": "microsoft.graph.booleanDirectoryAttributeValue",
                     "attributeType": "directorySchemaExtension"

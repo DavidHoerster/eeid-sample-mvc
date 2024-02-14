@@ -19,7 +19,7 @@ public static async Task<object> Run(HttpRequest req, ILogger log)
     // The form fields will load with these default values
     var inputs = new Dictionary<string, object>()
     {
-        { "extension_8f501e8ef99546fe900eca1aa5a0c08f_touVersion", "v19.0" }      
+        { "extension_<externsion-app-id>_touVersion", "v19.0" }      
     };
 
     var actions = new List<SetPrefillValuesAction>{

@@ -17,7 +17,7 @@ public static async Task<object> Run(HttpRequest req, ILogger log)
     dynamic request = JsonConvert.DeserializeObject(requestBody);
 
     // Parse specified attributes
-    bool? isTouAccepted = request?.data?.userSignUpInfo?.attributes?.extension_8f501e8ef99546fe900eca1aa5a0c08f_isTouAccepted?.value;
+    bool? isTouAccepted = request?.data?.userSignUpInfo?.attributes?.extension_<externsion-app-id>_isTouAccepted?.value;
     string displayName = request?.data?.userSignUpInfo?.attributes?.displayName?.value;
     string firstName = request?.data?.userSignUpInfo?.attributes?.givenName?.value;
     string lastName = request?.data?.userSignUpInfo?.attributes?.surname?.value;
@@ -25,7 +25,7 @@ public static async Task<object> Run(HttpRequest req, ILogger log)
     // JSON convert makes the length different, so we put 7 here
     if(!isTouAccepted.HasValue){
         var inputs = new Dictionary<string, string>();
-        inputs.Add("extension_8f501e8ef99546fe900eca1aa5a0c08f_isTouAccepted", "You must accept terms of use");
+        inputs.Add("extension_<externsion-app-id>_isTouAccepted", "You must accept terms of use");
 
         string pageMessage = "Please fix below errors to proceed";
 
@@ -50,8 +50,8 @@ public static async Task<object> Run(HttpRequest req, ILogger log)
 
     }else{
         var attrs = new Dictionary<string, object>(){
-            {"extension_8f501e8ef99546fe900eca1aa5a0c08f_touVersion", "v19.0"},
-            {"extension_8f501e8ef99546fe900eca1aa5a0c08f_isTouAccepted", isTouAccepted.Value},
+            {"extension_<externsion-app-id>_touVersion", "v19.0"},
+            {"extension_<externsion-app-id>_isTouAccepted", isTouAccepted.Value},
             {"displayName", displayName},
             {"givenName", firstName},
             {"surname", lastName}
